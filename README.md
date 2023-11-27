@@ -229,7 +229,7 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
 
 
 ### Project: 
-  * Configure Monitoring for a Third-Party Application
+  * Configure Monitoring for a Third-Party Application(Redis)
  ### Technologiesused: Prometheus, Kubernetes, Redis, Helm, Grafana
  ### Project Description:
 
@@ -247,7 +247,8 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
 
 ```
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/4899ed56-f37a-4820-952f-8b364049e36a" width="750">
+
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/56d474dd-a11e-4c40-adfe-f10efcfe5c88" width="750">
 
  Check the redis exporter target
  ```
@@ -256,7 +257,7 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
     - Search for redis-exporter
 ```
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/49db6750-9dfa-4df2-b24c-be3d9d46898f" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/c097b400-28b2-4e75-9e88-41538f60df2b" width="750">
 
 ##### Configure Alert Rules (when Redis is down or has too many connections)
 
@@ -304,7 +305,7 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
   - Search for redis-rules
 ```
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/91b26b30-381a-4079-8409-ddbe60d1cc66" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/bd34c6a4-bd99-4971-a5d8-280d03c2f76e" width="750">
 
 #### Test the redis metrics
 
@@ -316,7 +317,7 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
    ```
 * After that redis-cart will be terminating and redis metrics will be not available
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/d127b48d-283b-4a3c-a974-7052e7ec35d9" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/84d10f4f-dc3c-4af5-a0a5-ed047abe1d14" width="750">
 
 
 #### Create Redis Dashboard in  Grafana
@@ -328,5 +329,4 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
 ```
 
 
-
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/81eddec4-c7a8-4597-860b-f3cb42c7a43a" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/7cd9e141-99fc-44c5-981c-efbea3ad98b9" width="750">
