@@ -222,6 +222,9 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
 
 
 <img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/cda792a4-a06b-4306-8e76-ea7ee8322bb1" width="750">
+
+
+
 ---------------------------------------------------------------------------------
 
 
