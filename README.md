@@ -137,20 +137,21 @@ vi test.sh
 
 
 
+
 <img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/d6809e15-aaf0-4f48-bd87-687615777b94" width="750">
 
 * Test Our Alert Rules
 * We goona simulate a CPU load in our cluster to trigger the alert 
 
 ```
-  Using CPUStress docker image we will run the container inside the k8 pod for testing our rule.
+  Using CPUStress docker image we will run the container inside the k8s pod for testing our rule.
   - `kubectl run cpu-test --image=containerstack/cpustress -- --cpu 4 --timeout 30s --metrics-brief`
   You can check the cpu load over grafana under dashboard 'kubernetes-cluster'
   Also, Can check on prometheus alert.
 ```
 
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/c9117120-a6c3-4415-9d04-52ed7fb07903" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/3761c56a-a0b4-45c2-b06f-c27365b16275" width="750">
 
 #### Configure Alertmanager with Email Receiver
 ##### YAML code defines an AlertmanagerConfig named "main-rules-alert-config" in the "monitoring" namespace. This configuration specifies how alerts should be routed and how notifications should be sent
@@ -197,7 +198,7 @@ To Check Prometheus Alert UI -
 ```
 
 #### Test the Email Notification
-   Test Our own alert manager
+  *  Test Our own alert manager
 
 ```
 Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule is in firing state, you will get email.
@@ -205,17 +206,22 @@ Load the CPUStress by using CPUStress Image, and when HostHighCpuLoad alert rule
 ```
 
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/63bd5ad9-b45c-4e7d-b678-aca63c6de826" width="750">
 
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/57c2c775-0f86-451e-b53d-c74bd5c29562" width="750">
-
-Check the email  for alert firing send the notication to the email
-
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/fa707c3f-00cc-435f-b40a-0ab125367608" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/449d2bf1-59e8-43bc-af97-99011ef2f7db" width="750">
 
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/baabd206-5a94-4398-b818-0f850e4abb7b" width="750">
+
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/db05fb48-ba75-4aec-a9e2-cc16a603da7d" width="750">
+
+####  Check the email  for alert firing send the notication to the email
+
+
+
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/85edcabc-1408-4c13-bc96-3b925b0b5f0a" width="750">
+
+
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/cda792a4-a06b-4306-8e76-ea7ee8322bb1" width="750">
 ---------------------------------------------------------------------------------
 
 
@@ -224,11 +230,11 @@ Check the email  for alert firing send the notication to the email
  ### Technologiesused: Prometheus, Kubernetes, Redis, Helm, Grafana
  ### Project Description:
 
- Monitor Redis by using Prometheus Exporter
+ * Monitor Redis by using Prometheus Exporter
 
-  Deploy Redis service in our cluster
+ * Deploy Redis service in our cluster
 
-  Deploy Redis exporter using Helm Chart
+ *  Deploy Redis exporter using Helm Chart
 
 ```
   Using Helm Chart to deploy
