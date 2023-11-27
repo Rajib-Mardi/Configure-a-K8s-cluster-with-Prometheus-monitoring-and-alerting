@@ -1,6 +1,4 @@
-### Monitoring with Prometheus
-
-![prometheus-logo](https://github.com/Rajib-Mardi/prom/assets/96679708/5b428898-507e-43cd-806c-5769dee3a67b)   ![grafana-logo](https://github.com/Rajib-Mardi/prom/assets/96679708/bcfd02ac-96a0-4ab6-b8f0-f17fa99f99ad)
+![prometheus-logo](https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/0a39c835-faa8-433c-90d5-429c503c0b7d)### Monitoring with Prometheus
 
 
 ### Project: 
