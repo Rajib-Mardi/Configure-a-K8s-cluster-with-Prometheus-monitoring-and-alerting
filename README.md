@@ -12,7 +12,7 @@ __________________________________________________________________
 
 * Using the eksctl command line, create an EKS cluster with the default configuration, region, and two worker nodes.
   
-* DEploy microservices Application
+* Deploy microservices Application
 
   * Deploy the online Shop microservices Application in the cluster with the Yaml file configuration
   ```
@@ -41,8 +41,7 @@ helm install monitoring prometheus-community/kube-prometheus-stack -n monitoring
 ```
 
 
-
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/7a8da53b-09ff-4d9f-9079-a7e5304a0fe9" width="750">
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/65441565-6aa9-4a9b-be4f-c6b9800e941b" width="750">
 
 * Access the prometheus UI
 ```
@@ -70,13 +69,15 @@ kubectl run curl-test --image=radial/busyboxplus:curl -i --tty --rm
 vi test.sh
 ```
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/a589d933-1b74-43a4-a9f9-8257a23bcd2b" width="750">
+
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/64232415-e614-42f6-82f0-cbc69dba8ecd" width="750">
 
 * make it executable and  execute  the ```./test.sh```
 
 * In grafana Graph we see the CPU spike in  the cluster
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/5e3bafcc-7aff-4a98-acb2-1aaffad97efc" width="750">
+
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/44f520f0-715f-4adc-a910-375c36bef321" width="750">
 
 
 
@@ -90,10 +91,11 @@ vi test.sh
 
 #### Project Description:
 
-Configure our Monitoring Stack to notify us whenever CPU usage > 50% or Pod cannot start
+#### Configure our Monitoring Stack to notify us whenever CPU usage > 50% or Pod cannot start
 
-  #### Configure Alert Rules in Prometheus Server
-Create a alert rule yaml file and apply it
+ #### Configure Alert Rules in Prometheus Server
+
+* Create a alert rule yaml file and apply it
 #### YAML code defines a PrometheusRule named "main-rules" in the "monitoring" namespace. The rule contains two alerting rules specified under the "main.rules" group.
 1. ```Alert: HostHighCpuLoad```
 
@@ -135,9 +137,10 @@ Create a alert rule yaml file and apply it
 
 
 
-<img src="https://github.com/Rajib-Mardi/prom/assets/96679708/379170bd-9001-49fd-b4ca-8bb6d2e51d21" width="750">
-Test Our Alert Rules
-We goona simulate a CPU load in our cluster to trigger the alert 
+<img src="https://github.com/Rajib-Mardi/Monitoring-with-Prometheus/assets/96679708/d6809e15-aaf0-4f48-bd87-687615777b94" width="750">
+
+* Test Our Alert Rules
+* We goona simulate a CPU load in our cluster to trigger the alert 
 
 ```
   Using CPUStress docker image we will run the container inside the k8 pod for testing our rule.
